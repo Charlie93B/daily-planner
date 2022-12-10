@@ -69,3 +69,11 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+
+/* Reusable classes */
+
+.center-text {
+  text-align: center;
+  align-content: center;
+}
