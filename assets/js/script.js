@@ -40,6 +40,13 @@ $(document).ready(() => {
         textInputEl.attr('id', inputId)
         textInputEl.addClass('col-9');
 
+        const storedValue = localStorage.getItem(`${hoursWorked}`);
+        if(!storedValue) {
+            textInputEl.attr('placeholder', '');
+        } else {
+            textInputEl.attr('placeholder', `${storedValue}`);
+        }
+
         if(hour == hoursWorked) {
             textInputEl.addClass('present');
         }
